@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Formulario de contato</title>
+	<link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h1>Contact Us</h1>
+		<form action="">
+
+			<div class="forms_duplo">
+				<label for="">First Name <span class="asterisco">*</span></label>
+				<input type="text" name="" id="name" required>
+
+				<label for="">Last Name <span class="asterisco">*</span></label>
+				<input type="text" name="" id="name" required>
+			</div>
+
+			<label for="">Email Addres <span>*</span></label>
+			<input type="email" name="" id="email" required>
+
+			<div class="forms_duplo">
+
+			<div>
+				<label for="">Query type <span>*</span></label>
+				<input type="checkbox" name="General" id="general">
+			</div>
+
+
+				<div>
+					<label for="">Support Request</label>
+					<input type="checkbox" name="Suport" id="support">
+				</div>
+
+			</div>
+
+			<label for="">Message <span>*</span></label>
+			<input type="text" name="" id="mensagem">
+
+			<div class="check">
+				<input type="checkbox" name="" id="consentimento">
+				<p>I consent to being contacted by the team <span>*</span></p>
+			</div>
+		</form>
+
+		<button onclick="Modal()">Submit</button>
+
+
+	</div>
+	
+
+	<script src="styles/Script.js"></script>
+</body>
+</html>
