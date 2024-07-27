@@ -1,4 +1,121 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Adiciona esta linha para melhor controle do espaçamento */
+	font-size: 20px;
+}
+.asterisco{
+	color: green;
+	font-size: 20px;	
+}
+
+body {
+    background-color: rgb(183, 255, 183);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+    height: 100vh;
+    font-family: Arial, sans-serif; /* Melhorar a aparência do texto */
+}
+
+h1{
+	font-size: 40px;
 	margin: 0;
+}
+
+.container {
+    background-color: #f6f6f6;
+	max-width: 600px;
+    width: 60%; /* Garante que o contêiner responda ao tamanho da janela */
+    padding: 20px; /* Adiciona preenchimento para espaçamento interno */
+    border-radius: 15px; /* Adiciona bordas arredondadas */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Adiciona uma leve sombra para dar profundidade */
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 40px;
+}
+form{
+	margin-top: -20px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.forms_duplo{
+	height: 80px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	gap: 10px;
+}
+
+.select_duplo{
+	height: 100px;
+	background-color: blueviolet;
+	display: flex;
+	flex-direction: column;
+
+}
+
+input{
+	height: 40px;
+	border-radius: 10px;
+	border: 0.5px solid rgba(128, 128, 128, 0.599);
 	padding: 0;
+}
+
+#mensagem{
+	height: 100px;
+}
+.check{
+	display: flex;
+	align-items: center;
+	margin-top: 20px;
+	gap: 10px;
+}
+
+button{
+	background-color: green;
+	padding: 15px;
+	border-radius: 10px;
+	border: none;
+	color: white;
+}
+
+
+/*Estilizando o Modal*/
+
+.background_modal{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.227);
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-align: center;
+	display: none;
+	transition: all 0.5s;
+
+}
+
+.modal{
+	width: 40%;
+	height: 100px;
+	background-color: green;
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	position: absolute;
+	top:  10px;
+	left: 50%;
+	transform: translate(-50%);
+	border-radius: 15px;
+	display: none;
+	transition: all 0.5s;
 }

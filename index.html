@@ -10,45 +10,46 @@
 
 	<div class="container">
 		<h1>Contact Us</h1>
-		<form action="">
+
+		<form action="" class="form_container">
 
 			<div class="forms_duplo">
-				<label for="">First Name <span class="asterisco">*</span></label>
-				<input type="text" name="" id="name" required>
-
-				<label for="">Last Name <span class="asterisco">*</span></label>
-				<input type="text" name="" id="name" required>
-			</div>
-
-			<label for="">Email Addres <span>*</span></label>
-			<input type="email" name="" id="email" required>
-
-			<div class="forms_duplo">
-
-			<div>
-				<label for="">Query type <span>*</span></label>
-				<input type="checkbox" name="General" id="general">
-			</div>
-
 
 				<div>
-					<label for="">Support Request</label>
-					<input type="checkbox" name="Suport" id="support">
+					<label for="">First Name <span class="asterisco">*</span></label>
+					<input type="text" name="" id="name" required size="20">
+				</div>
+
+				<div>
+					<label for="">Last Name <span class="asterisco">*</span></label>
+					<input type="text" name="" id="name" required size="24.5">
 				</div>
 
 			</div>
 
-			<label for="">Message <span>*</span></label>
-			<input type="text" name="" id="mensagem">
+
+			<label for="">Email Addres <span class="asterisco">*</span></label>
+			<input type="email" name="" id="email" required size="50">
+
+
+			<label for="">Message <span class="asterisco">*</span></label>
+			<input type="text" name="" id="mensagem" size="50" >
 
 			<div class="check">
 				<input type="checkbox" name="" id="consentimento">
-				<p>I consent to being contacted by the team <span>*</span></p>
+				<p>I consent to being contacted by the team <span class="asterisco">*</span></p>
 			</div>
 		</form>
 
 		<button onclick="Modal()">Submit</button>
+	</div>
 
+	<div class="background_modal" onclick="FecharModal()">
+
+		<div class="modal">
+			<h3>Message Sent!</h3>
+			<p>Thanks for completing the form. We´ll be in touch soon!</p>
+		</div>
 
 	</div>
 	
